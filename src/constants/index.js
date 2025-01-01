@@ -16,9 +16,9 @@ import {
   figma,
   docker,
   meta,
-  google,
-  amazon,
-  netflix,
+  starbucks,
+  tesla,
+  shopify,
   carrent,
   jobit,
   tripguide,
@@ -42,19 +42,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Frontend Developer",
+    title: "Web Developer",
     icon: web,
   },
   {
-    title: "Mobile App Developer",
+    title: "React Native Developer",
     icon: mobile,
   },
   {
-    title: "Backend Specialist",
+    title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Technical Writer",
+    title: "Content Creator",
     icon: creator,
   },
 ];
@@ -101,70 +101,70 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "Git",
+    name: "git",
     icon: git,
   },
   {
-    name: "Figma",
+    name: "figma",
     icon: figma,
   },
   {
-    name: "Docker",
+    name: "docker",
     icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "Frontend Engineer",
-    company_name: "Google",
-    icon: google,
-    iconBg: "#F7C223",
+    title: "React.js Developer",
+    company_name: "Starbucks",
+    icon: starbucks,
+    iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
-      "Collaborated with design teams to build scalable UI components.",
-      "Optimized web pages for performance and accessibility.",
-      "Wrote reusable code for large-scale projects.",
-      "Participated in agile sprint meetings and provided regular updates.",
+      "Developed and maintained interactive web components for Starbucks' e-commerce platform.",
+      "Enhanced website performance, reducing page load times by 30%.",
+      "Collaborated with teams to ensure brand consistency across digital platforms.",
+      "Built reusable components, improving scalability of the codebase.",
     ],
   },
   {
-    title: "Backend Developer",
-    company_name: "Amazon",
-    icon: amazon,
-    iconBg: "#FF9900",
+    title: "React Native Developer",
+    company_name: "Tesla",
+    icon: tesla,
+    iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Designed and implemented RESTful APIs for e-commerce applications.",
-      "Maintained and upgraded legacy systems for better performance.",
-      "Handled database architecture and schema migrations.",
-      "Worked closely with DevOps to ensure system reliability.",
+      "Led mobile app development for Tesla's user management system.",
+      "Integrated real-time data sync features, enabling seamless updates.",
+      "Worked closely with backend developers to streamline API integration.",
+      "Optimized mobile app UX, improving customer engagement by 20%.",
+    ],
+  },
+  {
+    title: "Web Developer",
+    company_name: "Shopify",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "Jan 2022 - Jan 2023",
+    points: [
+      "Built scalable web solutions for Shopify's marketplace.",
+      "Improved site responsiveness, achieving a 95% Lighthouse score.",
+      "Integrated third-party services to enhance platform functionality.",
+      "Contributed to developing themes for Shopify's storefronts.",
     ],
   },
   {
     title: "Full Stack Developer",
-    company_name: "Netflix",
-    icon: netflix,
-    iconBg: "#E50914",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developed core features for a high-traffic streaming platform.",
-      "Integrated third-party services for enhanced functionality.",
-      "Built responsive interfaces using React and Tailwind CSS.",
-      "Mentored junior developers and reviewed pull requests.",
-    ],
-  },
-  {
-    title: "Technical Consultant",
     company_name: "Meta",
     icon: meta,
-    iconBg: "#1877F2",
+    iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Provided technical advice for social media platform innovations.",
-      "Developed tools to analyze user data for insights.",
-      "Collaborated with cross-functional teams to achieve project goals.",
-      "Delivered presentations on emerging web technologies.",
+      "Architected scalable systems for Meta's internal tools.",
+      "Collaborated on implementing GraphQL for optimized data fetching.",
+      "Enhanced deployment processes, reducing downtime by 15%.",
+      "Designed new features for Meta's project management platform.",
     ],
   },
 ];
@@ -172,46 +172,54 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "This developer brought our vision to life with professionalism and creativity.",
-    name: "Jane Doe",
-    designation: "CEO",
-    company: "Tech Solutions",
-    image: "https://randomuser.me/api/portraits/women/10.jpg",
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    name: "Sara Lee",
+    designation: "CFO",
+    company: "Acme Co",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "An exceptional team player who went above and beyond to meet our requirements.",
-    name: "John Smith",
-    designation: "Project Manager",
-    company: "Innovate Corp",
-    image: "https://randomuser.me/api/portraits/men/20.jpg",
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Chris Brown",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "Thanks to their work, our project was a huge success, exceeding all expectations.",
-    name: "Emily Clark",
-    designation: "Product Owner",
-    company: "NextGen Inc",
-    image: "https://randomuser.me/api/portraits/women/30.jpg",
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Lisa Wang",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+  {
+    testimonial:
+      "Rick's dedication and innovative ideas brought our project to life effortlessly.",
+    name: "John Doe",
+    designation: "Manager",
+    company: "XYZ Ltd",
+    image: "https://randomuser.me/api/portraits/men/7.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "E-Shop",
+    name: "Car Rent",
     description:
-      "An online shopping platform offering users a seamless experience to browse and purchase products.",
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
@@ -219,20 +227,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job Finder",
+    name: "Job IT",
     description:
-      "A platform where job seekers can search for opportunities and employers can post vacancies.",
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "restapi",
         color: "green-text-gradient",
       },
       {
-        name: "firebase",
+        name: "scss",
         color: "pink-text-gradient",
       },
     ],
@@ -240,16 +248,16 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Travel Companion",
+    name: "Trip Guide",
     description:
-      "A travel app that helps users discover destinations, book trips, and manage itineraries.",
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "vue",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "graphql",
+        name: "supabase",
         color: "green-text-gradient",
       },
       {
